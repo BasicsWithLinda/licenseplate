@@ -10,7 +10,8 @@ label_image = measure.label(localisation.binary_car_image)  # measuring it again
 # dimensions that the license plate can be
 # the plate height would be between 8% and 20%, and width would be 15% and 40%
 # in this example, ive brute forced the adjustments of the values as this image does not conform to usual restraints -- possibility to optimise this
-min_height, max_height, min_width, max_width = (0.08*label_image.shape[0], 0.6*label_image.shape[0], 0.15*label_image.shape[1], 0.7*label_image.shape[1])
+# it is now min height of 1% and max width of 50%
+min_height, max_height, min_width, max_width = (0.01*label_image.shape[0], 0.2*label_image.shape[0], 0.15*label_image.shape[1], 0.5*label_image.shape[1])
 plate_object_coords = []
 plate_like_objects = []
 
