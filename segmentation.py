@@ -17,7 +17,7 @@ fig, ax1 = plt.subplots(1)
 ax1.imshow(license_plate, cmap="gray")
 
 # adjusted the min_width to be 2% to account for letters being split. 0 for y-axis and 1 for x-axis
-min_height, max_height, min_width, max_width = (0.35*license_plate.shape[0], 0.60*license_plate.shape[0], 0.02*license_plate.shape[1], 0.15*license_plate.shape[1])
+min_height, max_height, min_width, max_width = (0.35*license_plate.shape[0], 0.60*license_plate.shape[0], 0.05*license_plate.shape[1], 0.15*license_plate.shape[1])
 
 characters = []
 counter = 0
